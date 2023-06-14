@@ -1,0 +1,36 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+     
+}
+
+.container{
+    background-color: #20321f;  
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;   
+    margin-top: 20px;
+}           
+
+.uname{
+    text-transform: capitalize; 
+}
+
+body{
+    background-color: #20321f;
+    overflow: hidden;   
+}
+
+td{
+    background-color: #59d484   ;  
+    color: black;       
+}
+
+tr{
+    /* background-color: #cff9c8;                     */
+    background-color: #a3f5e8;                    
+    /* color: white;          */
+}
