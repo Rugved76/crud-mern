@@ -9,6 +9,9 @@ import {
 
 const router = express.Router();
 
+router.get('/',()=>{
+    console.log('Server is up and running ...');    
+})
 router.get('/users', getUsers);
 router.get('/users/:id', getUserById);
 router.post('/users', saveUser);
