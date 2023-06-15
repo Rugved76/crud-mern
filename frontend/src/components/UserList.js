@@ -2,22 +2,23 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import '../app.css'
+import { url } from "../App";   
 
 const UserList = () => {
   const [users, setUser] = useState([]);
 
   useEffect(() => {
     getUsers();
-  }, []);
+  }, []); 
 
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:5000/users");
+    const response = await axios.get(`${url}/users`); 
     setUser(response.data);
   };
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/users/${id}`);
+      await axios.delete(`${url}/users/${id}`);
       getUsers();
     } catch (error) {
       console.log(error);
