@@ -5,7 +5,8 @@ import EditUser from "./components/EditUser";
 import './app.css'
 
 // dotenv.config();
-export const url = 'http://localhost:5000'
+// export const url = 'http://localhost:5000'
+export const url = 'https://crudbknd.onrender.com'
 // export const url = process.env.SERVER_URL
 
 function App() {
