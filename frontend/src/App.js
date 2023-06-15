@@ -1,11 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserList from "./components/UserList";
 import AddUser from "./components/AddUser";
-import EditUser from "./components/EditUser";
+import EditUser from "./components/EditUser"; 
 import './app.css'
 
+// dotenv.config();
+export const url = 'http://localhost:5000'
+// export const url = process.env.SERVER_URL
+
 function App() {
-  return (
+  return (    
     <BrowserRouter> 
       <div className="container">
         <Routes>
