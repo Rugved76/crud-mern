@@ -27,7 +27,7 @@ const UserList = () => {
 
   return (
     <div className="columns mt-2">
-      <div className="column is-half">
+      <div id="tab" className="column is-half">
         <Link to="add" className="button is-success">
           Add 
         </Link>
